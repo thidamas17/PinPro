@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html lang="th"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline": "#727785", "on-error": "#ffffff", "on-error-container": "#93000a", "surface-variant": "#d9e3f6", "surface-container": "#e6eeff", "surface": "#f8f9ff", "surface-dim": "#d0dbed", "primary-fixed-dim": "#adc7ff", "surface-container-high": "#dee9fc", "tertiary-fixed-dim": "#ffb4a9", "inverse-on-surface": "#eaf1ff", "on-primary": "#ffffff", "on-tertiary-fixed": "#410001", "on-surface-variant": "#414754", "surface-bright": "#f8f9ff", "secondary-fixed": "#7ffc97", "on-primary-container": "#ffffff", "on-tertiary-container": "#ffffff", "inverse-primary": "#adc7ff", "tertiary": "#b81d17", "on-tertiary": "#ffffff", "primary-container": "#1a73e8", "outline-variant": "#c1c6d6", "surface-container-highest": "#d9e3f6", "on-surface": "#121c2a", "on-secondary": "#ffffff", "on-background": "#121c2a", "tertiary-fixed": "#ffdad5", "secondary": "#006e2d", "secondary-container": "#7cf994", "secondary-fixed-dim": "#62df7d", "primary": "#005bbf", "on-secondary-fixed": "#002109", "primary-fixed": "#d8e2ff", "on-secondary-container": "#007230", "on-primary-fixed": "#001a41", "inverse-surface": "#27313f", "surface-container-low": "#eff4ff", "surface-tint": "#005bc0", "tertiary-container": "#dc392c", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#005320", "on-tertiary-fixed-variant": "#930004", "error": "#ba1a1a", "surface-container-lowest": "#ffffff", "on-primary-fixed-variant": "#004493", "background": "#f8f9ff" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "margin": "1.5rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-xl": "2rem", "space-md": "1rem", "gutter": "1rem" }, fontFamily: { "label-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "metric-counter": ["Plus Jakarta Sans"] }, fontSize: { "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "metric-counter": ["13px", { "lineHeight": "16px", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen selection:bg-primary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm min-w-0"><img alt="PinHub Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1WMe2Jf_wCWWSFW8ju9HFuUCAKf1ybt3PTHdbb1zcKjw7dNBUNoMiVkqL3WJmpP9ConOIstLv73xvBtGAJhCf5-3jgeEtc6Yd41JxVmGia39NmQGcaLD2eg2MbPlZXkJ2eLd-lagtFQbTATkoLcq1Ejl3o4CNBHj5nDS1-lSLAEeCevz-kkcv66SI2vyn6K5Lrbj9sH2zSn3bAqNEnF1v8za30xzk3ai4RQ0jnBoxOzgpyVeu6-GIdW2A"/><div class="flex flex-col truncate"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">PinHub</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal leading-tight">รัศมี 20 กม. • Places List</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button class="h-9 px-space-sm bg-surface-container-lowest/90 backdrop-blur-md rounded-full shadow-[0_2px_6px_-1px_rgba(31,41,55,0.08)] flex items-center gap-1 active:scale-95 transition-transform"><span class="material-symbols-outlined text-[18px] text-tertiary-container">location_on</span><span class="font-label-sm text-label-sm text-on-surface max-w-[110px] truncate">สยาม, กทม.</span></button><button class="w-11 h-11 flex items-center justify-center rounded-full active:opacity-80 transition-opacity"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX_7EnJAoFGaagXG1rYFBs4EX5Q3WxYwdnHrcRDtS-AAqnPmuCTGseblHo0nR_NkBtUzmbk7cWxW10QkYNaACo8zW9THo53ozx14fgSKZGIRm2arNPDsMNH71QtX6jhpsiQHxixMa2hbTF2p7L-5_FokSBWfdbrOqmQUKpMIYoVn8HDw2FsG5zqIbUIhTP2BRq7PWp91UlnRNFp8dCmuqKOZN_pC_AHj5BE2NPa-8Wtd92VV0zzkc"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full pb-12">
+<!-- Search & Active Filters Header Sticky Anchor -->
+<section class="sticky top-0 z-30 bg-surface/90 backdrop-blur-xl px-margin-mobile pt-3 pb-3 space-y-space-sm shadow-[0_4px_20px_-4px_rgba(18,28,42,0.06)]">
+<!-- Search Bar -->
+<div class="relative flex items-center w-full">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px] pointer-events-none">search</span>
+<input class="w-full h-11 pl-10 pr-10 bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md rounded-full shadow-[0_2px_8px_rgba(0,0,0,0.04)] focus:outline-none focus:ring-0 transition-shadow" placeholder="ค้นหาชื่อสถานที่ในหมวดที่เลือก..." type="text"/>
+<button class="absolute right-2.5 w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[16px]">mic</span>
+</button>
+</div>
+<!-- Active Filter Chips Summary -->
+<div class="flex items-center gap-space-sm overflow-x-auto no-scrollbar py-0.5 -mx-margin-mobile px-margin-mobile">
+<button class="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-lowest rounded-full shadow-sm text-on-surface font-label-md text-label-md flex-shrink-0 active:scale-95 transition-transform">
+<span class="text-sm">🍽️</span>
+<span>ร้านอาหาร</span>
+<span class="px-1.5 py-0.5 bg-tertiary-fixed text-on-tertiary-fixed font-metric-counter text-[11px] rounded-full">142</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-lowest rounded-full shadow-sm text-on-surface font-label-md text-label-md flex-shrink-0 active:scale-95 transition-transform">
+<span class="text-sm">☕</span>
+<span>คาเฟ่</span>
+<span class="px-1.5 py-0.5 bg-surface-container text-primary font-metric-counter text-[11px] rounded-full">85</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-lowest rounded-full shadow-sm text-on-surface font-label-md text-label-md flex-shrink-0 active:scale-95 transition-transform">
+<span class="text-sm">🛕</span>
+<span>ศาสนสถาน</span>
+<span class="px-1.5 py-0.5 bg-secondary-fixed text-on-secondary-fixed font-metric-counter text-[11px] rounded-full">38</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-lowest rounded-full shadow-sm text-on-surface font-label-md text-label-md flex-shrink-0 active:scale-95 transition-transform">
+<span class="text-sm">🛍️</span>
+<span>ห้างฯ</span>
+<span class="px-1.5 py-0.5 bg-primary-fixed text-on-primary-fixed font-metric-counter text-[11px] rounded-full">19</span>
+</button>
+</div>
+<!-- Sorting & Radius Status Context Bar -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>พบรวม 284 จุด ในรัศมี 20 กม.</span>
+</div>
+<!-- Sort Toggle Trigger -->
+<button class="flex items-center gap-1 px-2.5 py-1 bg-surface-container-high text-on-surface rounded-full font-label-md text-label-md active:opacity-75 transition-opacity" id="sortToggleBtn">
+<span class="material-symbols-outlined text-[16px] text-primary">swap_vert</span>
+<span id="currentSortLabel">ระยะทางใกล้สุด</span>
+<span class="material-symbols-outlined text-[14px] text-outline">expand_more</span>
+</button>
+</div>
+</section>
+<!-- Feed Content List -->
+<div class="flex flex-col gap-space-lg px-margin-mobile mt-space-md">
+<!-- SECTION 1: RESTAURANTS -->
+<section class="flex flex-col gap-space-sm">
+<!-- Section Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-tertiary-fixed text-on-tertiary-fixed shadow-sm">
+<span class="text-[15px]">🍽️</span>
+</span>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">ร้านอาหารยอดนิยมใกล้คุณ</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">แสดง 2 จาก 142 แห่ง ในระยะทำการ</span>
+</div>
+</div>
+<a class="font-label-sm text-label-sm text-primary flex items-center gap-0.5" href="#">
+<span>ทั้งหมด</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Card 1: Jeh O Chula -->
+<article class="flex flex-col bg-surface-container-lowest rounded-DEFAULT shadow-[0_3px_12px_rgba(18,28,42,0.05)] overflow-hidden transition-all active:scale-[0.99]">
+<div class="flex p-space-sm gap-space-sm">
+<!-- Thumbnail with Category Pill Bar -->
+<div class="relative w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Steaming hot famous tom yum noodle pot at Jeh O Chula with crispy pork slices, fresh lime slices, and rich golden chili broth, urban Bangkok night street food aesthetic, cinematic warm spotlighting, high detail, commercial culinary food photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIEUKaE0IL0SyhpxMaAdddKbHnh0R2WLZVf3dAgQBUu1MDuYL0SCE7SWVlFnDmeINYjgSPVAlz9Vjet4BDxTFpK785yPKp1FfTuvCbfINV7gNAAuV-vOPZhFKHM-YKHooAgyO-CscPNTJBGMuxgHVBR1Hna3pe-JClpAdLPZn5gXoTJU0nn5l9q-Qjo18u1sqjg0Ymt-NaMTr0v7zWJdCAU_SjvK0akyJ80RG1dfoiSofIOKm0K7E"/>
+<span class="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-tertiary font-label-sm text-[10px]">อาหารดึก</span>
+</div>
+<!-- Content Details -->
+<div class="flex flex-col justify-between flex-grow min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">เจ๊โอว ข้าวต้มเป็ด</h3>
+<button class="w-7 h-7 flex items-center justify-center rounded-full text-outline-variant hover:text-tertiary transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+</div>
+<!-- Ratings & Distance -->
+<div class="flex items-center gap-1.5 mt-0.5 font-label-md text-label-md">
+<div class="flex items-center text-amber-500">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline-sm text-[13px] ml-0.5 text-on-surface">4.5</span>
+</div>
+<span class="text-outline text-[12px]">(8,920)</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-md text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">near_me</span>1.4 กม.
+                </span>
+</div>
+</div>
+<!-- Operational & Subtitle -->
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mt-2">
+<span class="flex items-center gap-1 text-secondary font-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>เปิด 16:30 - 00:00 น.
+              </span>
+<span class="text-outline">อาหารไทย-จีน</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Footer Strip -->
+<div class="flex items-center justify-end gap-space-sm px-space-sm py-2 bg-surface-container-low">
+<button class="flex items-center gap-1 px-3 py-1 bg-surface-container-lowest text-on-surface rounded-full font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px] text-primary">map</span>
+<span>ดูบนแผนที่</span>
+</button>
+<button class="flex items-center gap-1 px-3 py-1 bg-primary text-on-primary rounded-full font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">navigation</span>
+<span>นำทางทันที</span>
+</button>
+</div>
+</article>
+<!-- Card 2: Thip Samai Pad Thai -->
+<article class="flex flex-col bg-surface-container-lowest rounded-DEFAULT shadow-[0_3px_12px_rgba(18,28,42,0.05)] overflow-hidden transition-all active:scale-[0.99]">
+<div class="flex p-space-sm gap-space-sm">
+<div class="relative w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Traditional charcoal wok stir-fried Pad Thai wrapped in delicate egg net crepe topped with giant river prawns, crushed roasted peanuts, fresh banana blossom at Thip Samai Pratu Phi, vintage Bangkok street food vibe, warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJEKbdiwWOS2wt9J92hBmKdY77iraakduQ8jZViVFzU0dM0tSJaGSxPzEQhFObAIfO99zQK6XFz8qJitgNDtW-2q57vsmDplnGTovmvKM30cTaHSkq3NhH7c9lIuZhxaxAdmMhWffBsuu1hTGbr3H_miNb2gy-xCQcQseKaowh_NNlb-AZraFQ6idggR6zY3GtAP0yhWohY0ILb4FwCE1d-IAJAGl5cUE8kZ9VruRT3XGrDnKczEc"/>
+<span class="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-tertiary font-label-sm text-[10px]">มิชลินไกด์</span>
+</div>
+<div class="flex flex-col justify-between flex-grow min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">ทิพย์สมัย ผัดไทยประตูผี</h3>
+<button class="w-7 h-7 flex items-center justify-center rounded-full text-outline-variant hover:text-tertiary transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5 font-label-md text-label-md">
+<div class="flex items-center text-amber-500">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline-sm text-[13px] ml-0.5 text-on-surface">4.3</span>
+</div>
+<span class="text-outline text-[12px]">(12,150)</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-md text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">near_me</span>3.2 กม.
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mt-2">
+<span class="flex items-center gap-1 text-secondary font-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>เปิดบริการอยู่
+              </span>
+<span class="text-outline">ผัดไทยต้นตำรับ</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm px-space-sm py-2 bg-surface-container-low">
+<button class="flex items-center gap-1 px-3 py-1 bg-surface-container-lowest text-on-surface rounded-full font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px] text-primary">map</span>
+<span>ดูบนแผนที่</span>
+</button>
+<button class="flex items-center gap-1 px-3 py-1 bg-primary text-on-primary rounded-full font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">navigation</span>
+<span>นำทางทันที</span>
+</button>
+</div>
+</article>
+</section>
+<!-- SECTION 2: RELIGIOUS & CULTURAL SITES -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-secondary-fixed text-on-secondary-fixed shadow-sm">
+<span class="text-[15px]">🛕</span>
+</span>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">วัด มัสยิด โบสถ์ ใกล้คุณ</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">แสดง 3 จาก 38 แห่ง ในรัศมี 20 กม.</span>
+</div>
+</div>
+<a class="font-label-sm text-label-sm text-primary flex items-center gap-0.5" href="#">
+<span>ทั้งหมด</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Card 3: Wat Khaek Silom -->
+<article class="flex flex-col bg-surface-container-lowest rounded-DEFAULT shadow-[0_3px_12px_rgba(18,28,42,0.05)] overflow-hidden transition-all active:scale-[0.99]">
+<div class="flex p-space-sm gap-space-sm">
+<div class="relative w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Intricately sculpted colorful Dravidian Gopuram tower of Sri Maha Mariamman Temple Wat Khaek Silom Bangkok adorned with Hindu deities and floral motifs against bright tropical sky, golden sunlight, highly detailed architecture photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_231P4btbvMd0lH1i5dt8D80qybvIDl9OJ1R9OYRQDt-yeb_TEdRMvsXxRj-BGnKitGniE0j7UhcSBxQ3eKWKxKXIItSQoAZiC3-6yMryXf_pMQaLf8f1dTvCB0cYBjWfIh_Af-qxKTzsedcG1v31_nYl1UMrw52GnVgeKvI6IZIUK4DifC33LWNXTqJ67T3bG2NP7qok0RFdCnCl4P7lL5jpcQKw1phnAXYSUOCBQEAV9TDrZGQ"/>
+<span class="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-sm text-[10px]">เทวสถาน</span>
+</div>
+<div class="flex flex-col justify-between flex-grow min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">วัดพระศรีมหาอุมาเทวี (วัดแขกสีลม)</h3>
+<button class="w-7 h-7 flex items-center justify-center rounded-full text-outline-variant hover:text-secondary transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5 font-label-md text-label-md">
+<div class="flex items-center text-amber-500">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline-sm text-[13px] ml-0.5 text-on-surface">4.7</span>
+</div>
+<span class="text-outline text-[12px]">(6,410)</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-md text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">near_me</span>3.8 กม.
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mt-2">
+<span class="flex items-center gap-1 text-secondary font-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>เปิด 06:00 - 20:00 น.
+              </span>
+<span class="text-outline">สีลม</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm px-space-sm py-2 bg-surface-container-low">
+<button class="flex items-center gap-1 px-3 py-1 bg-surface-container-lowest text-on-surface rounded-full font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px] text-primary">map</span>
+<span>ดูบนแผนที่</span>
+</button>
+<button class="flex items-center gap-1 px-3 py-1 bg-primary text-on-primary rounded-full font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">navigation</span>
+<span>นำทางทันที</span>
+</button>
+</div>
+</article>
+<!-- Card 4: Haroon Mosque -->
+<article class="flex flex-col bg-surface-container-lowest rounded-DEFAULT shadow-[0_3px_12px_rgba(18,28,42,0.05)] overflow-hidden transition-all active:scale-[0.99]">
+<div class="flex p-space-sm gap-space-sm">
+<div class="relative w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Historical Haroon Mosque in Bang Rak Bangkok, vintage dark teak wood Islamic architecture, elegant arched prayer hall with soft lantern light, historic peaceful courtyard atmosphere, high resolution documentary photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIWgnPWga0vPe0muuLdC43qoVqY07aYOm1b0SSU_b8Lgu0WOPzATLT731rrncUPB-gfbC0cc6D8shKlcmjsCJOiT8nEZX6DsjabXkboavjG5a8LswK46BVIkLW5bTDQvwL65ub5xCGF2X5AeQfUf-Qth3z0KkSXJMIUbPR0UntQdFZZkVyqZSlhgBbrg2UEL_NU6LPihV46h_DtAWkC2e93qBf_G1NKSMp7rKcmWFQlRY-E75FnY8"/>
+<span class="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-sm text-[10px]">มัสยิด</span>
+</div>
+<div class="flex flex-col justify-between flex-grow min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">มัสยิดฮารูณ (บางรัก)</h3>
+<button class="w-7 h-7 flex items-center justify-center rounded-full text-outline-variant hover:text-secondary transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5 font-label-md text-label-md">
+<div class="flex items-center text-amber-500">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline-sm text-[13px] ml-0.5 text-on-surface">4.8</span>
+</div>
+<span class="text-outline text-[12px]">(1,230)</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-md text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">near_me</span>4.2 กม.
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mt-2">
+<span class="flex items-center gap-1 text-secondary font-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>เปิดละหมาด 5 เวลา
+              </span>
+<span class="text-outline">เจริญกรุง</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm px-space-sm py-2 bg-surface-container-low">
+<button class="flex items-center gap-1 px-3 py-1 bg-surface-container-lowest text-on-surface rounded-full font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px] text-primary">map</span>
+<span>ดูบนแผนที่</span>
+</button>
+<button class="flex items-center gap-1 px-3 py-1 bg-primary text-on-primary rounded-full font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">navigation</span>
+<span>นำทางทันที</span>
+</button>
+</div>
+</article>
+<!-- Card 5: Assumption Cathedral -->
+<article class="flex flex-col bg-surface-container-lowest rounded-DEFAULT shadow-[0_3px_12px_rgba(18,28,42,0.05)] overflow-hidden transition-all active:scale-[0.99]">
+<div class="flex p-space-sm gap-space-sm">
+<div class="relative w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Grand Romanesque brick facade and twin spires of Assumption Cathedral in Bang Rak Bangkok, dramatic afternoon sunlight illuminating stained glass windows, serene religious sanctuary courtyard, architectural photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-sExRrl5u7MfaBthHBYzwe8vS7fCQWWbmwJYt4vgibXC_IdyWWvICMzNCDyyxRrtkDPKJB2TzhQjjKrTVA7re7nGrb2YMbFvk-PZIellDhnskaW955tg1H8Y1iwvrVfTBEnAH5fwzVf1UQgJ1m6Vn1rkSXx6-dnqqNAfZYbrIZE8bzJHTwM-wpRR02OlO_sMVzXa0nj3k8Cz6t79WZZEyqsNpLzbOu-pmxb0TJ666lTTwWYLHHIU"/>
+<span class="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-sm text-[10px]">โบสถ์คริสต์</span>
+</div>
+<div class="flex flex-col justify-between flex-grow min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">อาสนวิหารอัสสัมชัญ</h3>
+<button class="w-7 h-7 flex items-center justify-center rounded-full text-outline-variant hover:text-secondary transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5 font-label-md text-label-md">
+<div class="flex items-center text-amber-500">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline-sm text-[13px] ml-0.5 text-on-surface">4.7</span>
+</div>
+<span class="text-outline text-[12px]">(2,100)</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-md text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">near_me</span>4.5 กม.
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mt-2">
+<span class="flex items-center gap-1 text-secondary font-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>เปิด 08:30 - 17:00 น.
+              </span>
+<span class="text-outline">บางรัก</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm px-space-sm py-2 bg-surface-container-low">
+<button class="flex items-center gap-1 px-3 py-1 bg-surface-container-lowest text-on-surface rounded-full font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px] text-primary">map</span>
+<span>ดูบนแผนที่</span>
+</button>
+<button class="flex items-center gap-1 px-3 py-1 bg-primary text-on-primary rounded-full font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">navigation</span>
+<span>นำทางทันที</span>
+</button>
+</div>
+</article>
+</section>
+<!-- SECTION 3: CAFES & BEVERAGES -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-surface-container text-primary shadow-sm">
+<span class="text-[15px]">☕</span>
+</span>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">คาเฟ่ &amp; สเปเชียลตี้คอฟฟี่</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">แสดง 1 จาก 85 แห่ง ในรัศมี 20 กม.</span>
+</div>
+</div>
+<a class="font-label-sm text-label-sm text-primary flex items-center gap-0.5" href="#">
+<span>ทั้งหมด</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Card 6: Factory Coffee -->
+<article class="flex flex-col bg-surface-container-lowest rounded-DEFAULT shadow-[0_3px_12px_rgba(18,28,42,0.05)] overflow-hidden transition-all active:scale-[0.99]">
+<div class="flex p-space-sm gap-space-sm">
+<div class="relative w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Award winning signature dirty coffee in layered glass cup with creamy cold milk and rich espresso shot pouring over ice at Factory Coffee Bangkok, sleek concrete minimalist coffee bar counter, cinematic aesthetic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAth61ifsyx1JHi2LM40t6F1jdr5lyroxRRrfHglpdgZvb4NRFRzrpvjgNHFUifbPBuaR8AZvE6ZinNVQegHsYXzh4OYPHsFWIljnnG_xMjyK0JtQDx0mH-h09tdyjetpa3XNGcneNPVRDbKbFbxeHYLAwjmVTF0j_32pNLUfoIiymB0z5lG1beBUnmd088IgyRoRKOqr7Ft3qyaF6d2a46pdjpjUEpsuh0nCpOcQJOKTIZDYUBZcY"/>
+<span class="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-[10px]">บาริสต้าแชมป์</span>
+</div>
+<div class="flex flex-col justify-between flex-grow min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Factory Coffee - Bangkok</h3>
+<button class="w-7 h-7 flex items-center justify-center rounded-full text-outline-variant hover:text-primary transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5 font-label-md text-label-md">
+<div class="flex items-center text-amber-500">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline-sm text-[13px] ml-0.5 text-on-surface">4.7</span>
+</div>
+<span class="text-outline text-[12px]">(4,320)</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-md text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">near_me</span>1.8 กม.
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mt-2">
+<span class="flex items-center gap-1 text-secondary font-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>เปิดบริการอยู่ (ปิด 17:00)
+              </span>
+<span class="text-outline">พญาไท</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm px-space-sm py-2 bg-surface-container-low">
+<button class="flex items-center gap-1 px-3 py-1 bg-surface-container-lowest text-on-surface rounded-full font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px] text-primary">map</span>
+<span>ดูบนแผนที่</span>
+</button>
+<button class="flex items-center gap-1 px-3 py-1 bg-primary text-on-primary rounded-full font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">navigation</span>
+<span>นำทางทันที</span>
+</button>
+</div>
+</article>
+</section>
+<!-- SECTION 4: SHOPPING & LIFESTYLE -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-primary-fixed text-on-primary-fixed shadow-sm">
+<span class="text-[15px]">🛍️</span>
+</span>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">ห้างสรรพสินค้า &amp; ช้อปปิ้ง</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">แสดง 1 จาก 19 แห่ง ในรัศมี 20 กม.</span>
+</div>
+</div>
+<a class="font-label-sm text-label-sm text-primary flex items-center gap-0.5" href="#">
+<span>ทั้งหมด</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Card 7: Siam Paragon -->
+<article class="flex flex-col bg-surface-container-lowest rounded-DEFAULT shadow-[0_3px_12px_rgba(18,28,42,0.05)] overflow-hidden transition-all active:scale-[0.99]">
+<div class="flex p-space-sm gap-space-sm">
+<div class="relative w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Modern glass atrium and luxury fountain facade of Siam Paragon shopping mall at central Siam Bangkok, illuminated by evening golden hour light with BTS skytrain structure visible, modern urban city photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChSc3_qIYdX2aMSYm9Z07vmv9MXJUbqs-aodYe9loJ8QvKg90F7qbinaFA2rIZ18rJoJh7v42ccQTy8VfW9sdQjzsdh7tF0sqUQP9R4as3f9PZroKbrfXYm17Q7_vheJGg1XD-4fgxZhP_GnY_C-E2wjgV7CBzjVYdHq353HTjltB0AfPOjz_uSoY-Z_hGjh15XpprlkpfvOXBy6EZrwXWWRngQ-YLtzCuQcERAme9rP5i0tI6_x0"/>
+<span class="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-[10px]">ศูนย์การค้า</span>
+</div>
+<div class="flex flex-col justify-between flex-grow min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">สยามพารากอน</h3>
+<button class="w-7 h-7 flex items-center justify-center rounded-full text-outline-variant hover:text-primary transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5 font-label-md text-label-md">
+<div class="flex items-center text-amber-500">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline-sm text-[13px] ml-0.5 text-on-surface">4.6</span>
+</div>
+<span class="text-outline text-[12px]">(65,400)</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-md text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">near_me</span>0.3 กม.
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mt-2">
+<span class="flex items-center gap-1 text-secondary font-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>เปิดบริการอยู่ (ปิด 22:00)
+              </span>
+<span class="text-outline">ปทุมวัน</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm px-space-sm py-2 bg-surface-container-low">
+<button class="flex items-center gap-1 px-3 py-1 bg-surface-container-lowest text-on-surface rounded-full font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px] text-primary">map</span>
+<span>ดูบนแผนที่</span>
+</button>
+<button class="flex items-center gap-1 px-3 py-1 bg-primary text-on-primary rounded-full font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">navigation</span>
+<span>นำทางทันที</span>
+</button>
+</div>
+</article>
+</section>
+</div>
+<!-- Bottom Floating Call-To-Action Button for Map View Transition -->
+<div class="fixed bottom-20 left-0 right-0 z-40 flex justify-center pointer-events-none px-margin-mobile">
+<button class="pointer-events-auto h-12 px-6 bg-inverse-surface text-inverse-on-surface font-label-lg text-label-lg rounded-full shadow-[0_8px_24px_rgba(18,28,42,0.30)] flex items-center gap-2.5 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">map</span>
+<span>ดูหมุดทั้งหมด 284 จุดบนแผนที่</span>
+<span class="px-2 py-0.5 bg-surface-container-highest/20 rounded-full font-metric-counter text-xs text-inverse-on-surface">20 กม.</span>
+</button>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for sort label cycling
+  const sortToggleBtn = document.getElementById('sortToggleBtn');
+  const sortLabel = document.getElementById('currentSortLabel');
+  if (sortToggleBtn && sortLabel) {
+    const sorts = ['ระยะทางใกล้สุด', 'คะแนนรีวิวสูงสุด', 'ความนิยมล่าสุด'];
+    let currentIndex = 0;
+    sortToggleBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % sorts.length;
+      sortLabel.textContent = sorts[currentIndex];
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_16px_rgba(18,28,42,0.06)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[64px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="map-view" href="#"><span class="material-symbols-outlined text-[24px]">explore</span><span class="font-label-sm text-label-sm mt-0.5">แผนที่</span></a><a class="relative flex flex-col items-center justify-center min-w-[64px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="category-layers" href="#"><div class="relative"><span class="material-symbols-outlined text-[24px]">tune</span><span class="absolute -top-1 -right-2 px-1 min-w-[16px] h-4 bg-primary text-on-primary font-label-sm text-[10px] rounded-full flex items-center justify-center shadow-sm">4</span></div><span class="font-label-sm text-label-sm mt-0.5">ตัวกรองชั้น</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[64px] h-12 transition-colors text-primary" data-path="places-list" href="#"><span class="material-symbols-outlined text-[24px]">view_list</span><span class="font-label-sm text-label-sm mt-0.5">รายการ</span></a><a class="flex flex-col items-center justify-center min-w-[64px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="saved-places" href="#"><span class="material-symbols-outlined text-[24px]">bookmark</span><span class="font-label-sm text-label-sm mt-0.5">บันทึกไว้</span></a></div></nav></body></html>

@@ -1,0 +1,6 @@
+{
+  "name": "PinHub - Multi-Category Geo Discovery & Map Navigator",
+  "description": "Spontaneous urban exploration, multi-category geospatial filter layers, interactive map triage, and nearby place discovery within a 20 km radius.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

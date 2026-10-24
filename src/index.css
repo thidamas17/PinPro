@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #f8f9ff;
+  --color-surface-dim: #d0dbed;
+  --color-surface-bright: #f8f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e6eeff;
+  --color-surface-container-high: #dee9fc;
+  --color-surface-container-highest: #d9e3f6;
+  --color-surface-variant: #d9e3f6;
+  --color-on-surface: #121c2a;
+  --color-on-surface-variant: #414754;
+  --color-inverse-surface: #27313f;
+  --color-inverse-on-surface: #eaf1ff;
+  --color-outline: #727785;
+  --color-outline-variant: #c1c6d6;
+  --color-surface-tint: #005bc0;
+  --color-primary: #005bbf;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1a73e8;
+  --color-on-primary-container: #ffffff;
+  --color-inverse-primary: #adc7ff;
+  --color-primary-fixed: #d8e2ff;
+  --color-primary-fixed-dim: #adc7ff;
+  --color-on-primary-fixed: #001a41;
+  --color-on-primary-fixed-variant: #004493;
+  --color-secondary: #006e2d;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #7cf994;
+  --color-on-secondary-container: #007230;
+  --color-secondary-fixed: #7ffc97;
+  --color-secondary-fixed-dim: #62df7d;
+  --color-on-secondary-fixed: #002109;
+  --color-on-secondary-fixed-variant: #005320;
+  --color-tertiary: #b81d17;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #dc392c;
+  --color-on-tertiary-container: #ffffff;
+  --color-tertiary-fixed: #ffdad5;
+  --color-tertiary-fixed-dim: #ffb4a9;
+  --color-on-tertiary-fixed: #410001;
+  --color-on-tertiary-fixed-variant: #930004;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-background: #f8f9ff;
+  --color-on-background: #121c2a;
+
+  --font-headline-lg: "Plus Jakarta Sans", "Noto Sans Thai", sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", "Noto Sans Thai", sans-serif;
+  --font-headline-sm: "Plus Jakarta Sans", "Noto Sans Thai", sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", "Noto Sans Thai", sans-serif;
+  --font-body-md: "Plus Jakarta Sans", "Noto Sans Thai", sans-serif;
+  --font-body-sm: "Plus Jakarta Sans", "Noto Sans Thai", sans-serif;
+  --font-label-lg: "Plus Jakarta Sans", "Noto Sans Thai", sans-serif;
+  --font-label-md: "Plus Jakarta Sans", "Noto Sans Thai", sans-serif;
+  --font-label-sm: "Plus Jakarta Sans", "Noto Sans Thai", sans-serif;
+  --font-metric-counter: "Plus Jakarta Sans", monospace, sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9ff;
+    font-family: "Plus Jakarta Sans", "Noto Sans Thai", system-ui, -apple-system, sans-serif;
+    color: #121c2a;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'liga';
+}
